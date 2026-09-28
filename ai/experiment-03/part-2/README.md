@@ -78,83 +78,8 @@ For action tools:
 
 AI can request an action. The backend decides whether that action is allowed.
 
-Architecture
-┌─────────────────┐
-│  React Native   │
-│     Mobile      │
-└────────┬────────┘
-         │
-         │ POST /api/chat
-         ▼
-┌─────────────────┐
-│ Node.js /       │
-│ Express Backend │
-└────────┬────────┘
-         │
-         ▼
-┌─────────────────┐
-│     OpenAI      │
-└────────┬────────┘
-         │
-         │ function_call
-         ▼
-┌─────────────────┐
-│  executeTool()  │
-└────────┬────────┘
-         │
-         ▼
-┌─────────────────┐
-│  Order Service  │
-└────────┬────────┘
-         │
-         ▼
-      Order Data
-         │
-         │ function_call_output
-         ▼
-┌─────────────────┐
-│     OpenAI      │
-└────────┬────────┘
-         │
-         ▼
-     Final response
-         │
-         ▼
-┌─────────────────┐
-│  React Native   │
-└─────────────────┘
-Project Structure
-part-2/
-├── mobile/
-│
-├── server/
-│   ├── src/
-│   │   ├── ai/
-│   │   │   ├── openai.ts
-│   │   │   └── runToolCalling.ts
-│   │   │
-│   │   ├── data/
-│   │   │   └── orders.ts
-│   │   │
-│   │   ├── services/
-│   │   │   └── orderService.ts
-│   │   │
-│   │   ├── tools/
-│   │   │   ├── orderTools.ts
-│   │   │   └── toolExecutor.ts
-│   │   │
-│   │   └── index.ts
-│
-│   ├── .env.example
-│   ├── .gitignore
-│   ├── package.json
-│   └── tsconfig.json
-│
-└── README.md
-Backend Responsibilities
 
 The backend is responsible for:
-
 Receiving the user's prompt.
 Sending the prompt and available tools to OpenAI.
 Reading the model's tool calls.
@@ -175,7 +100,6 @@ Estimated delivery
 getOrderDetails
 
 Returns:
-
 Customer
 Item
 Quantity
@@ -290,16 +214,20 @@ The server runs on:
 
 http://localhost:3000
 Test the Backend
+
 Health Check
 curl http://localhost:3000/health
+
 Search Orders
 curl -X POST http://localhost:3000/api/chat \
   -H "Content-Type: application/json" \
   -d '{"prompt":"Find all orders for Alex."}'
+
 Tool Chaining
 curl -X POST http://localhost:3000/api/chat \
   -H "Content-Type: application/json" \
   -d '{"prompt":"Find Alex'\''s orders and give me the full details of the order that is arriving today."}'
+
 Cancel Order
 curl -X POST http://localhost:3000/api/chat \
   -H "Content-Type: application/json" \
@@ -326,19 +254,6 @@ The OpenAI API key belongs on the backend.
 
 The React Native application should not contain the OpenAI API key.
 
-Use this architecture:
-
-React Native
-     ↓
-Your Backend
-     ↓
-OpenAI
-
-Not:
-
-React Native
-     ↓
-OpenAI API directly
 
 The .env file should never be committed to Git.
 
