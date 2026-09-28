@@ -29,13 +29,14 @@ The goal of this series is to explore how modern AI capabilities can be designed
 | 01 — Part 2 | AI Streaming & Chunks | Completed |
 | 02 | Structured AI / JSON Schema | Completed |
 | 03 — Part 1 | Tool Calling | Completed |
-| 03 — Part 2 | Advanced Tool Calling | Planned |
+| 03 — Part 2 | Advanced Tool Calling | Completed |
 | 04 | RAG & Embeddings | Planned |
 | 05 | Multimodal AI | Planned |
 | 06 | Voice AI | Planned |
 | 07 | Agentic Workflows | Planned |
 | 08 | Mobile AI Architecture | Planned |
 | 09 | Production AI | Planned |
+
 
 ## About
 
