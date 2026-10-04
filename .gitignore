@@ -142,3 +142,13 @@ vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
 .DS_Store
+
+# PlanIt local dependencies and secrets
+**/node_modules/
+**/.env
+**/.env.*
+!**/.env.example
+**/dist/
+**/build/
+**/.DS_Store
+**/android/app/debug.keystore
