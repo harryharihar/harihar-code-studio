@@ -152,3 +152,8 @@ vite.config.ts.timestamp-*
 **/build/
 **/.DS_Store
 **/android/app/debug.keystore
+
+# AI assistant config (local only)
+**/CLAUDE.md
+**/AGENTS.md
+**/.claude/

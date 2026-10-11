@@ -24,16 +24,12 @@ async function main() {
 
     for (const result of results) {
       console.log("\n-------------------------");
-
       console.log("Document:", result.id);
-
       console.log(
         "Similarity:",
         result.similarity.toFixed(4),
       );
-
       console.log("Content:");
-
       console.log(result.content);
     }
   }

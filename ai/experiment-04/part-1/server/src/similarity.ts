@@ -3,7 +3,7 @@ export function cosineSimilarity(
     vectorB: number[],
   ): number {
     if (vectorA.length !== vectorB.length) {
-      throw new Error("Vectors must have the same length");
+      throw new Error("Vectors must have the same length.");
     }
   
     let dotProduct = 0;
@@ -14,7 +14,6 @@ export function cosineSimilarity(
       dotProduct += vectorA[i] * vectorB[i];
   
       magnitudeA += vectorA[i] * vectorA[i];
-  
       magnitudeB += vectorB[i] * vectorB[i];
     }
   

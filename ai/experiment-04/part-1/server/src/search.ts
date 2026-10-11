@@ -8,6 +8,12 @@ type IndexedDocument = {
   embedding: number[];
 };
 
+type SearchResult = {
+  id: string;
+  content: string;
+  similarity: number;
+};
+
 let index: IndexedDocument[] = [];
 
 export async function buildIndex() {
@@ -18,9 +24,7 @@ export async function buildIndex() {
   for (const document of documents) {
     console.log(`Creating embedding for ${document.id}...`);
 
-    const embedding = await createEmbedding(
-      document.content,
-    );
+    const embedding = await createEmbedding(document.content);
 
     index.push({
       id: document.id,
@@ -34,29 +38,28 @@ export async function buildIndex() {
   );
 }
 
-export async function searchDocuments(query: string) {
+export async function searchDocuments(
+  queries: string,
+  topK = 3,
+): Promise<SearchResult[]> {
   if (index.length === 0) {
     throw new Error(
       "Embedding index has not been initialized.",
     );
   }
 
-  const queryEmbedding = await createEmbedding(query);
+  const queryEmbedding = await createEmbedding(queries);
 
-  const results = index.map((document) => {
-    const similarity = cosineSimilarity(
+  const results: SearchResult[] = index.map((document) => ({
+    id: document.id,
+    content: document.content,
+    similarity: cosineSimilarity(
       queryEmbedding,
       document.embedding,
-    );
+    ),
+  }));
 
-    return {
-      id: document.id,
-      content: document.content,
-      similarity,
-    };
-  });
-
-  return results.sort(
-    (a, b) => b.similarity - a.similarity,
-  );
+  return results
+    .sort((a, b) => b.similarity - a.similarity)
+    .slice(0, topK);
 }
