@@ -32,7 +32,7 @@ The goal of this series is to explore how modern AI capabilities can be designed
 | 03 — Part 1 | Tool Calling | Completed |
 | 03 — Part 2 | Multi-Tool Calling | Completed |
 | 04 — Part 1 | RAG Embeddings & Semantic Search | Completed |
-| 04 — Part 2 | RAG — Grounded Generation | Planned |
+| 04 — Part 2 | RAG — Grounded Generation | Completed |
 | 05 | Multimodal AI | Planned |
 | 06 | Voice AI | Planned |
 | 07 | Agentic Workflows | Planned |
