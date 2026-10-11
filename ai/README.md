@@ -27,10 +27,12 @@ The goal of this series is to explore how modern AI capabilities can be designed
 |---|---|---|
 | 01 — Part 1 | Mobile AI / LLM Integration | Completed |
 | 01 — Part 2 | AI Streaming & Chunks | Completed |
-| 02 | Structured AI / JSON Schema | Completed |
+| 02 — Part 1 | Structured AI / JSON Schema (Food Ordering) | Completed |
+| 02 — Part 2 | Structured AI / JSON Schema (Education Assistant) | Completed |
 | 03 — Part 1 | Tool Calling | Completed |
-| 03 — Part 2 | Advanced Tool Calling | Completed |
-| 04 | RAG & Embeddings | Planned |
+| 03 — Part 2 | Multi-Tool Calling | Completed |
+| 04 — Part 1 | RAG Embeddings & Semantic Search | Completed |
+| 04 — Part 2 | RAG — Grounded Generation | Planned |
 | 05 | Multimodal AI | Planned |
 | 06 | Voice AI | Planned |
 | 07 | Agentic Workflows | Planned |
