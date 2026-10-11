@@ -282,7 +282,7 @@ The backend handles embedding the query, scoring it against the knowledge base, 
 
 ### ⏭ Next
 
-The next part will build on this retrieval step toward a full RAG pipeline — feeding the retrieved documents into an LLM to generate a grounded answer.
+Part 2 builds on this retrieval step toward a full RAG pipeline — feeding the retrieved documents into an LLM to generate a grounded answer. See [`part-2/README.md`](./part-2/README.md).
 
 ---
 
