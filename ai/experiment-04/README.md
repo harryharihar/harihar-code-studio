@@ -133,14 +133,14 @@ Before wiring up the API, this experiment works through five small standalone sc
 
 ```text
 experiment-04/
-├── mobile/
-│   └── src/
-│       ├── api/
-│       │   └── search.ts
-│       └── app/
-│           └── index.tsx
-│
 └── part-1/
+    ├── mobile/
+    │   └── src/
+    │       ├── api/
+    │       │   └── search.ts
+    │       └── app/
+    │           └── index.tsx
+    │
     └── server/
         ├── src/
         │   ├── documents.ts
@@ -223,7 +223,7 @@ npm run lab:1
 Navigate to the mobile application:
 
 ```bash
-cd mobile
+cd part-1/mobile
 ```
 
 Install dependencies:
