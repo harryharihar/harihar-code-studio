@@ -253,7 +253,7 @@ and renders the generated answer followed by the sources it was grounded in.
 
 ### ⏭ Next
 
-The current pipeline keeps everything in memory and re-embeds documents on every server restart. A production-style version would move to a real vector database, persist embeddings, and support multi-turn conversations.
+The current pipeline keeps everything in memory and re-embeds documents on every server restart. Part 3 moves this to a real vector database (PostgreSQL + pgvector). See [`part-3/README.md`](../part-3/README.md).
 
 ---
 
