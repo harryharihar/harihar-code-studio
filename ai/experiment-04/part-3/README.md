@@ -300,6 +300,8 @@ npx expo start
 
 This still runs a single Postgres instance with no index on the `embedding` column — fine for four documents, not for scale. A further step would add an IVFFlat/HNSW index, connection pooling limits, and move ingestion off the request path entirely.
 
+Part 4 takes a different next step first: this pipeline still has no safeguard against confidently answering questions the knowledge base can't actually support. See [`part-4/README.md`](../part-4/README.md).
+
 ---
 
 ## 🎓 About Harihar Code Studio
