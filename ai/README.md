@@ -35,7 +35,7 @@ The goal of this series is to explore how modern AI capabilities can be designed
 | 04 — Part 2 | RAG — Grounded Generation | Completed |
 | 04 — Part 3 | RAG with PostgreSQL + pgvector | Completed |
 | 04 — Part 4 | Hallucination & Grounded Answers | Completed |
-| 05 | Multimodal AI | Planned |
+| 05 | Multimodal AI | Completed |
 | 06 | Voice AI | Planned |
 | 07 | Agentic Workflows | Planned |
 | 08 | Mobile AI Architecture | Planned |
