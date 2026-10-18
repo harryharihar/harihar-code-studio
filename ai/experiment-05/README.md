@@ -155,10 +155,10 @@ experiment-05/
 
 ## 🚀 Backend Setup
 
-Navigate to the server:
+From the repository root, navigate to the server:
 
 ```bash
-cd experiment-05/server
+cd ai/experiment-05/server
 ```
 
 Install dependencies:
@@ -230,10 +230,10 @@ curl -F "question=What is multimodal AI?" http://localhost:3005/api/ask
 
 ## 📱 Run the Mobile Application
 
-Navigate to the mobile application:
+From the repository root, navigate to the mobile application:
 
 ```bash
-cd experiment-05/mobile
+cd ai/experiment-05/mobile
 ```
 
 Install dependencies:
