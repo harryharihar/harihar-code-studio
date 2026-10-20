@@ -37,6 +37,10 @@ The goal of this series is to explore how modern AI capabilities can be designed
 | 04 — Part 4 | Hallucination & Grounded Answers | Completed |
 | 05 | Multimodal AI | Completed |
 | 06 — Part 1 | Voice Assistant — Speech-to-Text | Completed |
+| 06 — Part 2 | Voice Assistant — AI Assistant (intent + reply) | Planned |
+| 06 — Part 3 | Voice Assistant — Text-to-Speech | Planned |
+| 06 — Part 4 | Voice Assistant — Productivity Tools | Planned |
+| 06 — Part 5 | Voice Assistant — Real-Time Voice | Planned |
 | 07 | Agentic Workflows | Planned |
 | 08 | Mobile AI Architecture | Planned |
 | 09 | Production AI | Planned |
