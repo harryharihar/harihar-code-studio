@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "AI Receipt Categorizer",
+    "slug": "receipt-ai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/hcs-logo.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/hcs-logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#F4EEE2"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#F6F1E7",
+        "foregroundImage": "./assets/hcs-logo.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
