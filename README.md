@@ -25,7 +25,7 @@ This repository contains practical AI experiments built with modern mobile and b
 - **Experiment 03** — AI Tool Calling
 - **Experiment 04** — RAG & Embeddings
 - **Experiment 05** — Multimodal AI
-- **Experiment 06** — Voice AI (Part 1: Speech-to-Text)
+- **Experiment 06** — Voice AI (Part 1: Speech-to-Text, Part 2: AI Assistant)
 - **Experiment 07** — Agentic Workflows
 - **Experiment 08** — Mobile AI Architecture
 - **Experiment 09** — Production AI

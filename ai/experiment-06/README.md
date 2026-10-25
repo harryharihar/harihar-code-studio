@@ -19,7 +19,7 @@ Over five parts we build a voice productivity assistant: you speak in English, H
 | Part | Topic | What the app gains | Status |
 | --- | --- | --- | --- |
 | [Part 1](part-1/README.md) | Speech-to-Text | Hears you and writes down what you said | Completed |
-| Part 2 | AI Assistant | Understands whether you want a reminder or a task, and replies | Planned |
+| [Part 2](part-2/README.md) | AI Assistant | Understands whether you want a reminder or a task, and replies | Completed |
 | Part 3 | Text-to-Speech | Speaks the reply | Planned |
 | Part 4 | Productivity Tools | Adds and lists tasks with tool calling | Planned |
 | Part 5 | Real-Time Voice | Live conversation, like a phone call | Planned |
@@ -44,7 +44,11 @@ The OpenAI key stays on the server in every part. The phone only ever talks to o
 ```text
 experiment-06/
 ├── README.md        ← this file
-└── part-1/          ← Speech-to-Text
+├── part-1/          ← Speech-to-Text
+│   ├── README.md
+│   ├── server/
+│   └── mobile/
+└── part-2/          ← AI Assistant
     ├── README.md
     ├── server/
     └── mobile/
