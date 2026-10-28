@@ -38,7 +38,7 @@ The goal of this series is to explore how modern AI capabilities can be designed
 | 05 | Multimodal AI | Completed |
 | 06 — Part 1 | Voice Assistant — Speech-to-Text | Completed |
 | 06 — Part 2 | Voice Assistant — AI Assistant (intent + reply) | Completed |
-| 06 — Part 3 | Voice Assistant — Text-to-Speech | Planned |
+| 06 — Part 3 | Voice Assistant — Text-to-Speech | Completed |
 | 06 — Part 4 | Voice Assistant — Productivity Tools | Planned |
 | 06 — Part 5 | Voice Assistant — Real-Time Voice | Planned |
 | 07 | Agentic Workflows | Planned |
