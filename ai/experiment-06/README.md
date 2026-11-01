@@ -21,7 +21,7 @@ Over five parts we build a voice productivity assistant: you speak in English, H
 | [Part 1](part-1/README.md) | Speech-to-Text | Hears you and writes down what you said | Completed |
 | [Part 2](part-2/README.md) | AI Assistant | Understands whether you want a reminder or a task, and replies | Completed |
 | [Part 3](part-3/README.md) | Text-to-Speech | Speaks the reply | Completed |
-| Part 4 | Productivity Tools | Adds and lists tasks with tool calling | Planned |
+| [Part 4](part-4/README.md) | Productivity Tools | Saves reminders, tasks and notes; real notifications | Completed |
 | Part 5 | Real-Time Voice | Live conversation, like a phone call | Planned |
 
 ---
@@ -52,7 +52,11 @@ experiment-06/
 │   ├── README.md
 │   ├── server/
 │   └── mobile/
-└── part-3/          ← Text-to-Speech
+├── part-3/          ← Text-to-Speech
+│   ├── README.md
+│   ├── server/
+│   └── mobile/
+└── part-4/          ← Productivity Tools
     ├── README.md
     ├── server/
     └── mobile/
