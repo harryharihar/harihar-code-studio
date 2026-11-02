@@ -22,7 +22,7 @@ Over five parts we build a voice productivity assistant: you speak in English, H
 | [Part 2](part-2/README.md) | AI Assistant | Understands whether you want a reminder or a task, and replies | Completed |
 | [Part 3](part-3/README.md) | Text-to-Speech | Speaks the reply | Completed |
 | [Part 4](part-4/README.md) | Productivity Tools | Saves reminders, tasks and notes; real notifications | Completed |
-| Part 5 | Real-Time Voice | Live conversation, like a phone call | Planned |
+| [Part 5](part-5/README.md) | Real-Time Voice | Live call over WebRTC: talk, interrupt, and she saves with tool calls | Completed |
 
 ---
 
@@ -56,7 +56,11 @@ experiment-06/
 │   ├── README.md
 │   ├── server/
 │   └── mobile/
-└── part-4/          ← Productivity Tools
+├── part-4/          ← Productivity Tools
+│   ├── README.md
+│   ├── server/
+│   └── mobile/
+└── part-5/          ← Real-Time Voice
     ├── README.md
     ├── server/
     └── mobile/
