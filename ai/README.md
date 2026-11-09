@@ -42,7 +42,8 @@ The goal of this series is to explore how modern AI capabilities can be designed
 | 06 — Part 4 | Voice Assistant — Productivity Tools | Completed |
 | 06 — Part 5 | Voice Assistant — Real-Time Voice | Completed |
 | 07 — Part 1 | Agentic AI — Intro to Agentic AI (Mission Control) | Completed |
-| 07 — Parts 2–6 | Agentic AI — Planning, Execution, Memory, Human-in-the-Loop, Multi-Agent Team | Planned |
+| 07 — Part 2 | Agentic AI — Planning Engine | Completed |
+| 07 — Parts 3–6 | Agentic AI — Execution, Memory, Human-in-the-Loop, Multi-Agent Team | Planned |
 | 08 | Mobile AI Architecture | Planned |
 | 09 | Production AI | Planned |
 

@@ -19,7 +19,7 @@ You give the app one goal, for example *"Prepare me for a Senior React Native in
 | Part | Topic | What the app gains | Status |
 | --- | --- | --- | --- |
 | [Part 1](part-1/README.md) | Intro to Agentic AI | The agent loop: plan → act → observe → decide, with three tools | Completed |
-| Part 2 | Planning Engine | Goal → a checked, repaired, ordered plan | Planned |
+| [Part 2](part-2/README.md) | Planning Engine | Goal → a checked, repaired, ordered plan | Completed |
 | Part 3 | Execution Loop | Many tools, retries, verify by calendar, loop guard, budgets | Planned |
 | Part 4 | Memory & State | PostgreSQL, checkpoints, resume, long-term memory | Planned |
 | Part 5 | Human-in-the-Loop | Policy engine, approvals, grants, expiry | Planned |
@@ -45,7 +45,11 @@ The OpenAI key stays on the server in every part. The phone only ever talks to o
 ```text
 experiment-07/
 ├── README.md        ← this file
-└── part-1/          ← Intro to Agentic AI
+├── part-1/          ← Intro to Agentic AI
+│   ├── README.md
+│   ├── server/
+│   └── mobile/
+└── part-2/          ← Planning Engine
     ├── README.md
     ├── server/
     └── mobile/
