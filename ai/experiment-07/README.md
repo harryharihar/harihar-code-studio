@@ -21,7 +21,7 @@ You give the app one goal, for example *"Prepare me for a Senior React Native in
 | [Part 1](part-1/README.md) | Intro to Agentic AI | The agent loop: plan → act → observe → decide, with three tools | Completed |
 | [Part 2](part-2/README.md) | Planning Engine | Goal → a checked, repaired, ordered plan | Completed |
 | [Part 3](part-3/README.md) | Execution Loop | The plan carried out: a party ordered within budget, retry, verify by order list, loop guard | Completed |
-| Part 4 | Memory & State | PostgreSQL, checkpoints, resume, long-term memory | Planned |
+| [Part 4](part-4/README.md) | Memory & State | PostgreSQL, checkpoints, resume after a crash, long-term memory | Completed |
 | Part 5 | Human-in-the-Loop | Policy engine, approvals, grants, expiry | Planned |
 | Part 6 | Multi-Agent Team | Researcher + Planner + Executor, orchestrator, replan, report | Planned |
 
@@ -53,7 +53,11 @@ experiment-07/
 │   ├── README.md
 │   ├── server/
 │   └── mobile/
-└── part-3/          ← Execution Loop
+├── part-3/          ← Execution Loop
+│   ├── README.md
+│   ├── server/
+│   └── mobile/
+└── part-4/          ← Memory & State
     ├── README.md
     ├── server/
     └── mobile/

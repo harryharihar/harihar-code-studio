@@ -1,0 +1,45 @@
+{
+  "name": "mission-control-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "demo": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "lab:1": "tsx labs/01-chatbot.ts",
+    "lab:2": "tsx labs/02-tool-call.ts",
+    "lab:3": "tsx labs/03-agent.ts",
+    "lab:4": "tsx labs/04-plan.ts",
+    "lab:5": "tsx labs/05-break-plan.ts",
+    "lab:6": "tsx labs/06-execute.ts",
+    "lab:7": "tsx labs/07-stuck-agent.ts",
+    "lab:8": "tsx labs/08-restart.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.8",
+    "express": "^5.3.0",
+    "openai": "^7.38.0",
+    "pg": "^8.23.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.16",
+    "@swc/core": "^1.15.0",
+    "@swc/jest": "^0.2.39",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^26.6.5",
+    "@types/pg": "^8.23.1",
+    "@types/supertest": "^7.2.1",
+    "jest": "^30.5.2",
+    "supertest": "^7.3.1",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
