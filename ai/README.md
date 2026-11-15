@@ -45,7 +45,8 @@ The goal of this series is to explore how modern AI capabilities can be designed
 | 07 — Part 2 | Agentic AI — Planning Engine | Completed |
 | 07 — Part 3 | Agentic AI — Execution Loop | Completed |
 | 07 — Part 4 | Agentic AI — Memory & State | Completed |
-| 07 — Parts 5–6 | Agentic AI — Human-in-the-Loop, Multi-Agent Team | Planned |
+| 07 — Part 5 | Agentic AI — Human-in-the-Loop | Completed |
+| 07 — Part 6 | Agentic AI — Multi-Agent Team | Planned |
 | 08 | Mobile AI Architecture | Planned |
 | 09 | Production AI | Planned |
 
