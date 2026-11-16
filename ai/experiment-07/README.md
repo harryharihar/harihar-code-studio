@@ -23,7 +23,7 @@ You give the app one goal, for example *"Prepare me for a Senior React Native in
 | [Part 3](part-3/README.md) | Execution Loop | The plan carried out: a party ordered within budget, retry, verify by order list, loop guard | Completed |
 | [Part 4](part-4/README.md) | Memory & State | PostgreSQL, checkpoints, resume after a crash, long-term memory | Completed |
 | [Part 5](part-5/README.md) | Human-in-the-Loop | An email agent that asks before money, meetings or strangers; rules in code, approvals, expiry | Completed |
-| Part 6 | Multi-Agent Team | Researcher + Planner + Executor, orchestrator, replan, report | Planned |
+| [Part 6](part-6/README.md) | Multi-Agent Team | A team of four AI agents (Manager, Sorter, Writer, Checker) replies to the inbox: handoffs, AI checks AI, loop limit, report | Completed |
 
 ---
 
@@ -61,7 +61,11 @@ experiment-07/
 │   ├── README.md
 │   ├── server/
 │   └── mobile/
-└── part-5/          ← Human-in-the-Loop
+├── part-5/          ← Human-in-the-Loop
+│   ├── README.md
+│   ├── server/
+│   └── mobile/
+└── part-6/          ← Multi-Agent Team
     ├── README.md
     ├── server/
     └── mobile/
