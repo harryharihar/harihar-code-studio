@@ -1,0 +1,1 @@
+React Native UI ↓ Local SQLite ↓ Sync Engine ↓ Backend API ↓ PostgreSQL
