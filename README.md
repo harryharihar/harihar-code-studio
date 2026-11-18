@@ -10,6 +10,8 @@ Source code and practical projects for the **Harihar Code Studio** YouTube serie
 - AI Tool Calling
 - RAG & Embeddings
 - Generative AI
+- Offline-First & Local-First Apps
+- Sync Engines & Conflict Resolution
 - Mobile Architecture
 - Performance Optimization
 - Practical Engineering Experiments
@@ -29,6 +31,18 @@ This repository contains practical AI experiments built with modern mobile and b
 - **Experiment 07** — Agentic Workflows
 - **Experiment 08** — Mobile AI Architecture
 - **Experiment 09** — Production AI
+
+## 📴 Offline-First Series
+
+**PlanIt**, a React Native task app built step by step to work without a network, save data on the phone first, and sync safely across devices. One folder per episode: [`offline_first/`](offline_first/README.md).
+
+### Episodes
+
+- **Episode 01** — Offline-First vs Online-First vs Local-First
+- **Episode 02** — React Native CLI Project Setup
+- **Episode 03** — Offline-First System Design
+- **Episode 04** — Offline-Ready Data Models: UUIDs, Timestamps and Validation
+- **Episodes 05–20** — UI, SQLite, outbox, sync engine, conflicts, background sync and production (coming soon)
 
 ## 📺 YouTube
 
