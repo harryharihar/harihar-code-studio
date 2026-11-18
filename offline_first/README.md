@@ -29,7 +29,7 @@ The goal of this series is to build **PlanIt**, a real React Native task app, st
 | 01 | Offline-First vs Online-First vs Local-First | [episode-01](episode-01/README.md) | Completed |
 | 02 | React Native CLI Project Setup | [episode-02](episode-02/PlanIt) | Completed |
 | 03 | Offline-First System Design: Architecture, Data Flow and Repository Pattern | [episode-03](episode-03/PlanIt) | Completed |
-| 04 | Designing Offline-Ready Data Models: UUIDs, Timestamps and Validation | [episode-04](episode-04/PlanIt) | Recording |
+| 04 | Designing Offline-Ready Data Models: UUIDs, Timestamps and Validation | [episode-04](episode-04/README.md) | Recording |
 | 05 | Build the PlanIt UI: Projects, Tasks and Navigation | — | Planned |
 | 06 | React Native CRUD with TypeScript | — | Planned |
 | 07 | SQLite in React Native | — | Planned |
