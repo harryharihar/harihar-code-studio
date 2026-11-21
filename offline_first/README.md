@@ -49,6 +49,8 @@ The goal of this series is to build **PlanIt**, a real React Native task app, st
 
 Each `episode-XX/PlanIt` folder is the code **as it stands at the end of that episode**, so you can open the folder that matches the video you are watching.
 
+**[`PlanIt/`](PlanIt/README.md) is the complete app:** one app and one server with every finished episode merged in (currently Episodes 01–04). Its README shows which episode added which part of the code.
+
 ## Running any episode
 
 ```bash
