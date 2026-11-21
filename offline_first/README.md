@@ -57,9 +57,14 @@ cd episode-XX/PlanIt
 # Database
 docker compose up -d
 
+# Database tables (from Episode 03 on): run each migration once, in order
+for f in server/database/migrations/*.sql; do
+  docker exec -i planit-postgres psql -U planit_user -d planit < "$f"
+done
+
 # API
 cd server
-cp .env.example .env      # then edit values
+cp .env.example .env      # works as-is with the docker-compose database
 npm install
 npm run dev               # http://localhost:4000/health
 
@@ -71,6 +76,8 @@ npm run ios               # or: npm run android
 ```
 
 `node_modules`, `ios/Pods` and build folders are not committed — install them per episode.
+
+> **Switching episodes?** Every episode uses the same container (`planit-postgres`) and the same database volume. Stop the old one first with `docker compose down` in that episode's folder. If the database still refuses to log in (it was created by an older version), reset it with `docker compose down -v` and run the steps above again. This deletes the local data.
 
 ## About
 

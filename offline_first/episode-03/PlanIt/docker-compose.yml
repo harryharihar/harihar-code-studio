@@ -4,14 +4,14 @@ services:
     container_name: planit-postgres
     environment:
       POSTGRES_DB: planit
-      POSTGRES_USER: planit
+      POSTGRES_USER: planit_user
       POSTGRES_PASSWORD: local_dev_password
     ports:
       - "5432:5432"
     volumes:
       - planit-postgres-data:/var/lib/postgresql
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U planit -d planit"]
+      test: ["CMD-SHELL", "pg_isready -U planit_user -d planit"]
       interval: 5s
       timeout: 5s
       retries: 10
