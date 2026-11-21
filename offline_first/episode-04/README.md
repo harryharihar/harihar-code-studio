@@ -153,25 +153,25 @@ The migration runs in one transaction: either all of it applies, or none of it.
 
 ## ⚙️ Setup
 
-Node 20+, Xcode (or Android Studio), and Docker for the database.
+Node 22.11+, Xcode (or Android Studio), and Docker for the database.
 
 ```bash
 cd offline_first/episode-04/PlanIt
 
 # Database
 docker compose up -d
-psql postgresql://planit_user:local_dev_password@localhost:5432/planit \
-  -f server/database/migrations/001_create_tasks.sql     # skip if you ran it in Ep 03
-psql postgresql://planit_user:local_dev_password@localhost:5432/planit \
-  -f server/database/migrations/002_projects_and_task_fields.sql
+docker exec -i planit-postgres psql -U planit_user -d planit \
+  < server/database/migrations/001_create_tasks.sql     # skip if you ran it in Ep 03
+docker exec -i planit-postgres psql -U planit_user -d planit \
+  < server/database/migrations/002_projects_and_task_fields.sql
 
 # Terminal 1: server
 cd server
-cp .env.example .env        # set YOUR_PASSWORD
+cp .env.example .env        # works as-is with docker compose
 npm install && npm run dev  # http://localhost:4000/health
 
 # Terminal 2: app
-cd apps/PlanItMobile
+cd offline_first/episode-04/PlanIt/apps/PlanItMobile
 npm install
 cd ios && bundle install && bundle exec pod install && cd ..
 npm run ios                 # or: npm run android
