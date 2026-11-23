@@ -3,9 +3,9 @@
 This is the **one PlanIt codebase** for the Offline-First / Local-First series on **Harihar Code Studio**.
 
 - The `episode-XX/PlanIt` folders are snapshots: the code exactly as it was at the end of each video.
-- **This folder** combines every finished episode into one app and one server. After an episode is recorded, its code is merged here.
+- **This folder** combines finished episodes into one app and one server. After an episode is recorded, its code is merged here.
 
-**Current version:** Episodes 01–04 (Phase 1 — Foundation & Architecture)
+**Current version:** Episodes 01–06 (app UI, navigation and in-memory CRUD)
 
 ---
 
@@ -17,8 +17,8 @@ This is the **one PlanIt codebase** for the Offline-First / Local-First series o
 | 02 | React Native CLI Project Setup | `apps/PlanItMobile` (React Native CLI + TypeScript), `server/` (Express + TypeScript, `/health`), `docker-compose.yml` (PostgreSQL) |
 | 03 | Offline-First System Design | `server/database/migrations/001_create_tasks.sql`, `docs/task-data-model.md`, architecture diagrams in `images/` |
 | 04 | Offline-Ready Data Models | `src/shared/domain/` (UUID v7, ISO time, base schemas), `src/features/tasks/domain` + `projects/domain` (Zod models), `src/features/tasks/data/taskMappers.ts`, `src/dev/syncLab.ts`, migration `002`, 17 tests — [notes](../episode-04/README.md) |
-| 05 | Build the PlanIt UI | _Planned_ |
-| 06 | React Native CRUD with TypeScript | _Planned_ |
+| 05 | Build the PlanIt UI | `src/app/navigation.tsx` (typed React Navigation), Home / Tasks / Overview screens, task editor and new project sheets, `src/shared/ui/` (theme, controls, state views). The Ep 04 Sync Lab was removed; it stays in [episode-04](../episode-04/README.md) — [notes](../episode-05-06/README.md) |
+| 06 | React Native CRUD with TypeScript | `TaskRepository` / `ProjectRepository` interfaces with in-memory versions, `src/app/repositories.ts`, create / edit / complete / delete, search and filters, 32 tests — [notes](../episode-05-06/README.md) |
 | 07 | SQLite in React Native | _Planned_ |
 | 08 | Repository Pattern | _Planned_ |
 | 09 | Offline CRUD with SQLite | _Planned_ |
@@ -41,12 +41,26 @@ This is the **one PlanIt codebase** for the Offline-First / Local-First series o
 ```text
 PlanIt/
 ├── apps/PlanItMobile/        React Native app (TypeScript)
+│   ├── App.tsx               theme, status bar, navigator (Ep 05)
+│   ├── __tests__/            32 tests
 │   └── src/
-│       ├── shared/domain/    IDs, time, base schemas (Ep 04)
+│       ├── app/              navigation, repositories, seed data (Ep 05–06)
+│       ├── assets/           logo (Ep 05)
 │       ├── features/
-│       │   ├── projects/     project model (Ep 04)
-│       │   └── tasks/        task model + mappers (Ep 04)
-│       └── dev/              Sync Lab teaching simulator (Ep 04)
+│       │   ├── projects/
+│       │   │   ├── domain/   project model (Ep 04)
+│       │   │   ├── data/     ProjectRepository + in-memory version (Ep 06)
+│       │   │   └── screens/  Home, NewProject (Ep 05)
+│       │   └── tasks/
+│       │       ├── domain/      task model (Ep 04)
+│       │       ├── data/        mappers (Ep 04), TaskRepository + in-memory version (Ep 06)
+│       │       ├── components/  TaskCard (Ep 05)
+│       │       └── screens/     TaskList, TaskEditor, TaskOverview (Ep 05)
+│       └── shared/
+│           ├── domain/       IDs, time, base schemas (Ep 04), field errors (Ep 06)
+│           ├── data/         delay / failure simulation (Ep 06)
+│           ├── lib/          due dates (Ep 05)
+│           └── ui/           theme, controls, icons, state views (Ep 05)
 ├── server/                   Node.js + Express API (TypeScript)
 │   └── database/migrations/  PostgreSQL migrations (001 from Ep 03, 002 from Ep 04)
 ├── docs/                     data model reference
@@ -80,7 +94,7 @@ cd offline_first/PlanIt/apps/PlanItMobile
 npm install
 cd ios && bundle install && bundle exec pod install && cd ..
 npm run ios                   # or: npm run android
-npm test                      # 17 tests
+npm test                      # 32 tests
 ```
 
 Run the migrations only once. If you already ran an episode folder before, stop it with `docker compose down` there first. If login fails because of an old database, reset it with `docker compose down -v` (this deletes local data).

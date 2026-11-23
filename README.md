@@ -42,7 +42,9 @@ This repository contains practical AI experiments built with modern mobile and b
 - **Episode 02** — React Native CLI Project Setup
 - **Episode 03** — Offline-First System Design
 - **Episode 04** — Offline-Ready Data Models: UUIDs, Timestamps and Validation
-- **Episodes 05–20** — UI, SQLite, outbox, sync engine, conflicts, background sync and production (coming soon)
+- **Episode 05** — Build the PlanIt UI: Projects, Tasks and Navigation
+- **Episode 06** — React Native CRUD with TypeScript
+- **Episodes 07–20** — SQLite, outbox, sync engine, conflicts, background sync and production (coming soon)
 
 ## 📺 YouTube
 

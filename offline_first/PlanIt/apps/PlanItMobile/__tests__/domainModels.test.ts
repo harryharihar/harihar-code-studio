@@ -15,7 +15,8 @@ import {
 
 const T1 = '2026-11-18T08:42:00.000Z';
 const T2 = '2026-11-18T09:15:00.000Z';
-const UUID_V7 = /^[0-9a-f]{8}-[0-9a-f]{4}-7[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/;
+const UUID_V7 =
+  /^[0-9a-f]{8}-[0-9a-f]{4}-7[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/;
 
 describe('Project', () => {
   it('gets a UUID v7 and metadata on the device', () => {
@@ -38,7 +39,11 @@ describe('Task', () => {
 
   it('is created offline with a stable ID and pending status', () => {
     const task = createTask(
-      { projectId: project.id, title: 'Bijli bill pay karna', priority: 'high' },
+      {
+        projectId: project.id,
+        title: 'Bijli bill pay karna',
+        priority: 'high',
+      },
       T1,
     );
 
@@ -117,18 +122,30 @@ describe('Task', () => {
   });
 
   it('delete is a soft delete (tombstone), not a removed row', () => {
-    const task = createTask({ projectId: project.id, title: 'Car service' }, T1);
+    const task = createTask(
+      { projectId: project.id, title: 'Car service' },
+      T1,
+    );
     const deleted = deleteTask(task, T2);
 
     expect(deleted.id).toBe(task.id);
-    expect(deleted).toMatchObject({ deletedAt: T2, updatedAt: T2, version: 2, syncStatus: 'pending' });
+    expect(deleted).toMatchObject({
+      deletedAt: T2,
+      updatedAt: T2,
+      version: 2,
+      syncStatus: 'pending',
+    });
   });
 });
 
 describe('Mapping between app, SQLite and API', () => {
   const project = createProject({ name: 'Office' }, T1);
   const task = createTask(
-    { projectId: project.id, title: 'Client call', dueAt: '2026-11-21T10:30:00.000Z' },
+    {
+      projectId: project.id,
+      title: 'Client call',
+      dueAt: '2026-11-21T10:30:00.000Z',
+    },
     T1,
   );
 

@@ -12,7 +12,7 @@ import {
  *   LocalTask (app)  ->  Task    (API JSON)  no local-only syncStatus
  */
 
-// ---------- SQLite row (table created in Ep 07) ----------
+// ---------- SQLite row ----------
 
 export interface TaskRow {
   id: string;
@@ -64,7 +64,7 @@ export function fromTaskRow(row: TaskRow): LocalTask {
   });
 }
 
-// ---------- API payload (used by the sync engine in Ep 12) ----------
+// ---------- API payload (sent by the sync engine) ----------
 
 /** Zod drops keys the schema doesn't know, so syncStatus never leaves the phone. */
 export function toTaskPayload(task: LocalTask): Task {
