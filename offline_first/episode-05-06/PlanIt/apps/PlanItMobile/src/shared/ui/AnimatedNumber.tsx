@@ -19,13 +19,19 @@ export function AnimatedNumber(props: {
 
   useEffect(() => {
     const id = animated.addListener(({ value }) => setShown(Math.round(value)));
-    Animated.timing(animated, {
+    const animation = Animated.timing(animated, {
       toValue: props.value,
       duration: props.duration ?? 700,
       easing: Easing.out(Easing.cubic),
       useNativeDriver: false,
-    }).start(() => setShown(props.value));
-    return () => animated.removeListener(id);
+    });
+    animation.start(({ finished }) => {
+      if (finished) setShown(props.value);
+    });
+    return () => {
+      animation.stop();
+      animated.removeListener(id);
+    };
   }, [props.value, props.duration, animated]);
 
   return (

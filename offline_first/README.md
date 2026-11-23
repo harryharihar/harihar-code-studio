@@ -50,14 +50,14 @@ The goal of this series is to build **PlanIt**, a real React Native task app, st
 
 Each `episode-XX/PlanIt` folder is the code **as it stands at the end of that episode**, so you can open the folder that matches the video you are watching.
 
-**[`PlanIt/`](PlanIt/README.md) is the complete app:** one app and one server that finished episodes are merged into (currently Episodes 01–04; Episodes 05–06 are in [`episode-05-06`](episode-05-06/README.md) and not merged yet). Its README shows which episode added which part of the code.
+**[`PlanIt/`](PlanIt/README.md) is the complete app:** one app and one server that every finished episode is merged into (currently Episodes 01–06). Its README shows which episode added which part of the code.
 
 ## File structure
 
 ```text
 offline_first/
 ├── README.md         this file
-├── PlanIt/           the complete app (Episodes 01–04 merged)
+├── PlanIt/           the complete app (Episodes 01–06 merged)
 ├── episode-01/       notes (no code)
 ├── episode-02/       PlanIt/ snapshot
 ├── episode-03/       PlanIt/ snapshot

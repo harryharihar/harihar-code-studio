@@ -91,10 +91,7 @@ export function createTask(
   });
 }
 
-/**
- * Every change: same id, new updatedAt, version + 1, pending again.
- * (Fixes the Ep 03 problem: updated_at must change on every update.)
- */
+/** Every change: same id, new updatedAt, version + 1, pending again. */
 export function updateTask(
   task: LocalTask,
   changes: UpdateTaskInput,

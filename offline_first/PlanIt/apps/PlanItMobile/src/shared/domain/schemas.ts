@@ -11,7 +11,7 @@ export const isoDateTimeSchema = z.iso.datetime();
  *
  * - createdAt / updatedAt: when it was made / last changed
  * - deletedAt: tombstone — null means "not deleted"
- * - version: goes up by 1 on every change; used for conflicts (Ep 16)
+ * - version: goes up by 1 on every change; used to detect conflicts
  */
 export const entityBaseSchema = z.object({
   id: idSchema,

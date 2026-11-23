@@ -26,6 +26,9 @@ export function ProgressBar(props: {
     }).start();
   }, [props.progress, value]);
 
+  // Stop the spring when the bar leaves the screen.
+  useEffect(() => () => value.stopAnimation(), [value]);
+
   const radius = { borderRadius: height / 2 };
 
   return (
