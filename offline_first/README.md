@@ -8,6 +8,7 @@ The goal of this series is to build **PlanIt**, a real React Native task app, st
 
 - Offline-first vs online-first vs local-first
 - React Native CLI project setup
+- App UI, typed navigation and CRUD
 - Offline-first system design and data flow
 - Offline-ready data models (UUIDs, timestamps, validation)
 - SQLite in React Native
@@ -30,8 +31,8 @@ The goal of this series is to build **PlanIt**, a real React Native task app, st
 | 02 | React Native CLI Project Setup | [episode-02](episode-02/PlanIt) | Completed |
 | 03 | Offline-First System Design: Architecture, Data Flow and Repository Pattern | [episode-03](episode-03/PlanIt) | Completed |
 | 04 | Designing Offline-Ready Data Models: UUIDs, Timestamps and Validation | [episode-04](episode-04/README.md) | Completed |
-| 05 | Build the PlanIt UI: Projects, Tasks and Navigation | — | Planned |
-| 06 | React Native CRUD with TypeScript | — | Planned |
+| 05 | Build the PlanIt UI: Projects, Tasks and Navigation | [episode-05-06](episode-05-06/README.md) | Completed |
+| 06 | React Native CRUD with TypeScript | [episode-05-06](episode-05-06/README.md) | Completed |
 | 07 | SQLite in React Native | — | Planned |
 | 08 | Repository Pattern in React Native | — | Planned |
 | 09 | Offline CRUD with SQLite | — | Planned |
@@ -49,7 +50,22 @@ The goal of this series is to build **PlanIt**, a real React Native task app, st
 
 Each `episode-XX/PlanIt` folder is the code **as it stands at the end of that episode**, so you can open the folder that matches the video you are watching.
 
-**[`PlanIt/`](PlanIt/README.md) is the complete app:** one app and one server with every finished episode merged in (currently Episodes 01–04). Its README shows which episode added which part of the code.
+**[`PlanIt/`](PlanIt/README.md) is the complete app:** one app and one server that finished episodes are merged into (currently Episodes 01–04; Episodes 05–06 are in [`episode-05-06`](episode-05-06/README.md) and not merged yet). Its README shows which episode added which part of the code.
+
+## File structure
+
+```text
+offline_first/
+├── README.md         this file
+├── PlanIt/           the complete app (Episodes 01–04 merged)
+├── episode-01/       notes (no code)
+├── episode-02/       PlanIt/ snapshot
+├── episode-03/       PlanIt/ snapshot
+├── episode-04/       README + PlanIt/ snapshot
+└── episode-05-06/    README + PlanIt/ snapshot (one folder for both episodes)
+```
+
+Each `PlanIt/` from Episode 02 on has `apps/PlanItMobile` (the React Native app), `server/` (the API) and `docker-compose.yml` (PostgreSQL).
 
 ## Running any episode
 

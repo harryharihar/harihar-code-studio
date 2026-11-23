@@ -3,7 +3,7 @@
 This is the **one PlanIt codebase** for the Offline-First / Local-First series on **Harihar Code Studio**.
 
 - The `episode-XX/PlanIt` folders are snapshots: the code exactly as it was at the end of each video.
-- **This folder** combines every finished episode into one app and one server. After an episode is recorded, its code is merged here.
+- **This folder** combines finished episodes into one app and one server. After an episode is recorded, its code is merged here.
 
 **Current version:** Episodes 01–04 (Phase 1 — Foundation & Architecture)
 
@@ -17,8 +17,8 @@ This is the **one PlanIt codebase** for the Offline-First / Local-First series o
 | 02 | React Native CLI Project Setup | `apps/PlanItMobile` (React Native CLI + TypeScript), `server/` (Express + TypeScript, `/health`), `docker-compose.yml` (PostgreSQL) |
 | 03 | Offline-First System Design | `server/database/migrations/001_create_tasks.sql`, `docs/task-data-model.md`, architecture diagrams in `images/` |
 | 04 | Offline-Ready Data Models | `src/shared/domain/` (UUID v7, ISO time, base schemas), `src/features/tasks/domain` + `projects/domain` (Zod models), `src/features/tasks/data/taskMappers.ts`, `src/dev/syncLab.ts`, migration `002`, 17 tests — [notes](../episode-04/README.md) |
-| 05 | Build the PlanIt UI | _Planned_ |
-| 06 | React Native CRUD with TypeScript | _Planned_ |
+| 05 | Build the PlanIt UI | _Completed in [episode-05-06](../episode-05-06/README.md), not merged here yet_ |
+| 06 | React Native CRUD with TypeScript | _Completed in [episode-05-06](../episode-05-06/README.md), not merged here yet_ |
 | 07 | SQLite in React Native | _Planned_ |
 | 08 | Repository Pattern | _Planned_ |
 | 09 | Offline CRUD with SQLite | _Planned_ |
